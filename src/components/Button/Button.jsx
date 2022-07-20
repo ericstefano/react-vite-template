@@ -8,12 +8,22 @@ export const Button = ({ children, onClick, color = '#1E8FD5', ...props }) => {
     onClick();
   };
 
+  const handleMouseOver = () => {
+    setColorHandler('#176DA3');
+  };
+
+  const handleMouseOut = () => {
+    setColorHandler(color);
+  };
+
   return (
     <button
       onMouseDown={handleClick}
       onMouseUp={() => setColorHandler('#176DA3')}
-      onMouseOver={() => setColorHandler('#176DA3')}
-      onMouseLeave={() => setColorHandler(color)}
+      onMouseOver={handleMouseOver}
+      onFocus={handleMouseOver}
+      onMouseOut={handleMouseOut}
+      onBlur={handleMouseOut}
       {...props}
       style={{
         backgroundColor: `${colorHandler}`,

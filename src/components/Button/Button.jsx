@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const Button = ({ children, onClick, color = '#1982C4', ...props }) => {
+export const Button = ({ children, onClick, color = '#1E8FD5', ...props }) => {
   const [colorHandler, setColorHandler] = useState(color);
 
   const handleClick = () => {
@@ -11,7 +11,7 @@ export const Button = ({ children, onClick, color = '#1982C4', ...props }) => {
   return (
     <button
       onMouseDown={handleClick}
-      onMouseUp={() => setColorHandler(color)}
+      onMouseUp={() => setColorHandler('#176DA3')}
       onMouseOver={() => setColorHandler('#176DA3')}
       onMouseLeave={() => setColorHandler(color)}
       {...props}

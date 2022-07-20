@@ -9,6 +9,10 @@
     "serve": "yarn build && vite preview",
     "test": "jest",
     "test:watch": "jest --watch",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "format": "prettier --write src",
+    "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -42,9 +46,11 @@
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^5.5.1",
+    "husky": "^8.0.1",
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
     "jest-transform-stub": "^2.0.0",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "vite": "^3.0.0"
   }

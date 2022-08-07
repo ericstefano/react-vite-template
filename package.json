@@ -35,8 +35,10 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.2.0",
-    "@types/react": "^18.0.15",
+    "@types/react": "^18.0.16",
     "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
     "@vitejs/plugin-react": "^2.0.0",
     "babel-loader": "^8.2.5",
     "eslint": "^8.20.0",
@@ -53,6 +55,8 @@
     "jest-transform-stub": "^2.0.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4",
     "vite": "^3.0.0"
   }
 }

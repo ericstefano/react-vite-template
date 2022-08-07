@@ -1,11 +1,17 @@
-import { useState } from 'react';
+import { ComponentPropsWithoutRef, MouseEvent, useState } from 'react';
 
-export const Button = ({ children, onClick, color = '#1E8FD5', ...props }) => {
+type ButtonProps = {
+  color?: string;
+} & ComponentPropsWithoutRef<'button'>;
+
+export const Button = ({ children, onClick, color = '#1E8FD5', ...props }: ButtonProps) => {
   const [colorHandler, setColorHandler] = useState(color);
 
-  const handleClick = () => {
+  const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
     setColorHandler('#1F9DEC');
-    onClick();
+    if (onClick !== undefined) {
+      onClick(event);
+    }
   };
 
   const handleMouseOver = () => {

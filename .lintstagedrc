@@ -1,5 +1,4 @@
 {
   "*.{js,ts,tsx,json,css,html,json}": ["prettier --write"],
-  "*.{js,ts,tsx}": ["eslint --fix"],
-  "*.{ts,tsx}": ["vitest related --run"]
+  "*.{ts,tsx}": ["eslint --fix", "tsc --noEmit --jsx react-jsx", "vitest related --run"]
 }

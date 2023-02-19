@@ -1,25 +1,18 @@
+import { clsx } from 'clsx';
 import { ComponentPropsWithoutRef } from 'react';
 
-type ButtonProps = {
-  color?: string;
-} & ComponentPropsWithoutRef<'button'>;
+type ButtonVariants = 'primary' | 'secondary';
 
-export const Button = ({ children, color = '#1E8FD5', ...props }: ButtonProps) => {
+const variants: Record<ButtonVariants, string> = {
+  primary: 'bg-red-500',
+  secondary: 'bg-green-500',
+};
+
+type ButtonProps = { variant?: ButtonVariants } & ComponentPropsWithoutRef<'button'>;
+
+export const Button = ({ children, variant = 'primary', ...props }: ButtonProps) => {
   return (
-    <button
-      {...props}
-      style={{
-        backgroundColor: color,
-        color: '#FFFFFF',
-        border: 0,
-        padding: '12px 18px',
-        fontSize: '16px',
-        fontWeight: 'bold',
-        lineHeight: '16px',
-        borderRadius: '3px',
-        cursor: 'pointer',
-      }}
-    >
+    <button className={clsx(variants[variant])} {...props}>
       {children}
     </button>
   );

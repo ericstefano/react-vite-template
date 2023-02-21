@@ -7,7 +7,9 @@ export default {
   argTypes: { onClick: { action: 'clicked' } },
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args}>Button</Button>;
+const Template: ComponentStory<typeof Button> = (args) => (
+  <Button {...args}>Button</Button>
+);
 
 export const Default = Template.bind({});
 Default.args = {};

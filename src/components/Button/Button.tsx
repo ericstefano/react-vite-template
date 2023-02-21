@@ -4,7 +4,11 @@ type ButtonProps = {
   color?: string;
 } & ComponentPropsWithoutRef<'button'>;
 
-export const Button = ({ children, color = '#1E8FD5', ...props }: ButtonProps) => {
+export const Button = ({
+  children,
+  color = '#1E8FD5',
+  ...props
+}: ButtonProps) => {
   return (
     <button
       {...props}

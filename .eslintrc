@@ -7,8 +7,6 @@
   "extends": [
     "eslint:recommended",
     "plugin:promise/recommended",
-    "plugin:import/typescript",
-    "plugin:import/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:testing-library/react",
     "plugin:react/recommended",

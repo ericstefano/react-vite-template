@@ -2,7 +2,7 @@ import { Button } from '@/components/Button';
 
 function App() {
   return (
-    <div className='App'>
+    <div className='font-sans'>
       <Button>Hello, world!</Button>
     </div>
   );

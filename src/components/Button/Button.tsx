@@ -4,26 +4,13 @@ type ButtonProps = {
   color?: string;
 } & ComponentPropsWithoutRef<'button'>;
 
-export const Button = ({
-  children,
-  color = '#1E8FD5',
-  ...props
-}: ButtonProps) => {
+export const Button = ({ children, ...props }: ButtonProps) => {
   return (
     <button
       {...props}
-      style={{
-        backgroundColor: color,
-        color: '#FFFFFF',
-        border: 0,
-        padding: '12px 18px',
-        fontSize: '16px',
-        fontWeight: 'bold',
-        lineHeight: '16px',
-        borderRadius: '3px',
-        cursor: 'pointer',
-      }}
+      className='bg-blue-500 px-3 py-2 text-(white sm) rounded-md font-700 inline-flex gap-2 items-center'
     >
+      <div className='i-twemoji-grinning-face-with-smiling-eyes h-4 w-4' />
       {children}
     </button>
   );

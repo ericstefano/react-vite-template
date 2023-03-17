@@ -3548,7 +3548,7 @@
   dependencies:
     "@unocss/core" "0.50.3"
 
-"@unocss/preset-icons@0.50.3", "@unocss/preset-icons@^0.50.3":
+"@unocss/preset-icons@0.50.3":
   version "0.50.3"
   resolved "https://registry.yarnpkg.com/@unocss/preset-icons/-/preset-icons-0.50.3.tgz#c8d624363488b72def8753857fdb781b6a668462"
   integrity sha512-Bj1fd+VkUa1NiMfNIzwslRnnElbLpuJpRTldiX4v+fS0dJz3I3faFIuEXd/2gwZlSejfiDZL7w31uR6KqnyuDg==

@@ -3,7 +3,11 @@ const { loadConfigFromFile, mergeConfig } = require('vite');
 
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-a11y'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-a11y',
+  ],
   framework: '@storybook/react',
   core: {
     builder: '@storybook/builder-vite',
@@ -13,7 +17,7 @@ module.exports = {
   },
   async viteFinal(config) {
     const { config: userConfig } = await loadConfigFromFile(
-      resolve(__dirname, '../vite.config.js'),
+      resolve(__dirname, '../vite.config.ts'),
     );
 
     return mergeConfig(config, {

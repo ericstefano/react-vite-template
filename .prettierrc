@@ -6,9 +6,5 @@
   "trailingComma": "all",
   "jsxSingleQuote": true,
   "bracketSpacing": true,
-  "endOfLine": "auto",
-  "organizeImportsSkipDestructiveCodeActions": true,
-  "plugins": [
-    "prettier-plugin-organize-imports"
-  ]
+  "endOfLine": "auto"
 }

@@ -7,6 +7,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:promise/recommended",
+    "plugin:import/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:testing-library/react",
     "plugin:react/recommended",
@@ -23,22 +24,31 @@
   },
   "plugins": ["jsx-a11y"],
   "rules": {
-    "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
+    "react/no-array-index-key": "error",
+    "react/jsx-wrap-multilines": "error",
+    "react/jsx-pascal-case": "error",
+    "react/jsx-no-useless-fragment": "error",
+    "react/jsx-no-leaked-render": "error",
+    "react/hook-use-state": "warn",
+    "react/jsx-curly-brace-presence": "warn",
     "no-duplicate-imports": "error",
-    "react/prop-types": "off",
+    "import/first": "warn",
+    "import/order": "warn",
+    "jsx-a11y/aria-props": "warn",
+    "jsx-a11y/aria-proptypes": "warn",
+    "jsx-a11y/aria-unsupported-elements": "warn",
+    "jsx-a11y/role-has-required-aria-props": "warn",
+    "jsx-a11y/role-supports-aria-props": "warn",
+    "jsx-a11y/label-has-associated-control": "warn",
+    "jsx-a11y/aria-role": "warn",
     "jsx-a11y/alt-text": [
       "warn",
       {
         "elements": ["img"],
         "img": ["Image"]
       }
-    ],
-    "jsx-a11y/aria-props": "warn",
-    "jsx-a11y/aria-proptypes": "warn",
-    "jsx-a11y/aria-unsupported-elements": "warn",
-    "jsx-a11y/role-has-required-aria-props": "warn",
-    "jsx-a11y/role-supports-aria-props": "warn"
+    ]
   },
   "settings": {
     "react": {

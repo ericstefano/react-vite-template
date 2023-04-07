@@ -16,7 +16,7 @@ describe('Button', () => {
 
   it('Should forward button props', () => {
     render(<Button disabled />);
-    expect(screen.getByRole('button')).toHaveAttribute('disabled');
+    expect(screen.getByRole('button')).toBeDisabled();
   });
 
   it('Should run onClick when clicked', async () => {

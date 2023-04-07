@@ -9,9 +9,9 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
   ],
-  framework: '@storybook/react',
-  core: {
-    builder: '@storybook/builder-vite',
+  framework: {
+    name: '@storybook/react-vite',
+    options: {},
   },
   features: {
     storyStoreV7: true,
@@ -20,11 +20,13 @@ module.exports = {
     const { config: userConfig } = await loadConfigFromFile(
       resolve(__dirname, '../vite.config.ts'),
     );
-
     return mergeConfig(config, {
       ...userConfig,
       // manually specify plugins to avoid conflict
       plugins: [Unocss.default()],
     });
+  },
+  docs: {
+    autodocs: true,
   },
 };

@@ -3,6 +3,7 @@ import {
   presetUno,
   presetWebFonts,
   transformerVariantGroup,
+  transformerDirectives,
 } from 'unocss';
 
 export default defineConfig({
@@ -15,5 +16,5 @@ export default defineConfig({
       },
     }),
   ],
-  transformers: [transformerVariantGroup()],
+  transformers: [transformerVariantGroup(), transformerDirectives()],
 });

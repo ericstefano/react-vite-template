@@ -111,9 +111,6 @@ devDependencies:
   storybook:
     specifier: ^7.0.4
     version: 7.0.4
-  ts-node:
-    specifier: ^10.9.1
-    version: 10.9.1(@types/node@18.15.11)(typescript@5.0.4)
   typescript:
     specifier: ^5.0.4
     version: 5.0.4

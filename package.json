@@ -60,7 +60,6 @@
     "msw": "^1.2.1",
     "prettier": "^2.8.7",
     "storybook": "^7.0.4",
-    "ts-node": "^10.9.1",
     "typescript": "^5.0.4",
     "unocss": "^0.51.4",
     "vite": "^4.2.1",

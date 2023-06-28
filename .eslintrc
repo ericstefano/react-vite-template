@@ -8,18 +8,16 @@
     "eslint:recommended",
     "plugin:promise/recommended",
     "plugin:import/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "parserOptions": {
-      "project": "tsconfig.json"
-    }
+    "project": "tsconfig.json"
   },
   "plugins": ["jsx-a11y"],
   "rules": {

@@ -38,6 +38,8 @@
     "jsx-a11y/role-supports-aria-props": "warn",
     "jsx-a11y/label-has-associated-control": "warn",
     "jsx-a11y/aria-role": "warn",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
     "jsx-a11y/alt-text": [
       "warn",
       {
